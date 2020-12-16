@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+    <title>Company</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="container_header">
+        <div class="header-left"><i class="fas fa-blog"></i></div>
+        <ul class="header-right">
+          <li><a href="#company">Company</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="heading">
+          <h1>ad-MOVE</h1>
+          <h3>グッとくるもう１つのidea</h3>
+          <a href="#">お問い合わせはこちら</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container_all">
+        <div class="container_company" id="company">
+          <div class="company_item">
+            <div class="company_heading">
+              <h1>Company</h1>
+              <p>会社について</p>
+            </div>
+            <div class="company_heart">
+              <h2>事業理念</h2>
+              <h3>グッとくるもう１つのidea</h3>
+              <p>集客したいけど方法がわからない、普段忙しくて手が回らない、そもそも楽しくない。<br>
+                 そんな方々に感動を与えられるようなサービスを提供できればと思い事業に取り組んでおります。<br>
+                 提供するだけではなく、そばにいるサポーター集団としてグッとくるものを共に作りあげていきたいと考えております。
+               </p>
+            </div>
+            <div class="company_member">
+              <h2>メンバー紹介</h2>
+              <ul class="member_item">
+                <li>
+                  <div class="zoom"><img src="image/profile1.jpg" alt="プロフィール写真"></div>
+                  <p>〜担当</p>
+                </li>
+                <li>
+                  <div class="zoom"><img src="image/profile2.jpg" alt="プロフィール写真"></div>
+                  <p>〜担当</p>
+                </li>
+                <li>
+                  <div class="zoom"><img src="image/profile3.jpg" alt="プロフィール写真"></div>
+                  <p>〜担当</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container_service" id="service">
+          <div class="service_item">
+            <div class="service_header">
+              <h1>Service</h1>
+              <p>事業紹介</p>
+            </div>
+            <div class="service_body">
+              <ul class="body_up">
+                <li class="up_left">
+                  <div class="zoom">
+                    <a href="#">
+                      <img src="image/art.jpg" alt="アート動画">
+                    </a>
+                  </div>
+                </li>
+                <li class="up_right">
+                  <div class="zoom">
+                    <a href="#">
+                      <img src="image/video_editing.jpg" alt="動画編集">
+                    </a>
+                  </div>
+                </li>
+              </ul>
+              <ul class="body_down">
+                <li class="down_left">
+                  <div class="zoom">
+                    <a href="#">
+                      <img src="image/hp.jpg" alt="ホームページ制作">
+                    </a>
+                  </div>
+                </li>
+                <li class="down_right">
+                  <div class="zoom">
+                    <a href="#">
+                      <img src="image/lp.jpg" alt="ランディングページ制作">
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container_work" id="work">
+          <div class="work_item">
+            <div class="work_heading">
+              <h1>Work</h1>
+              <p>制作実績</p>
+            </div>
+          </div>
+        </div>
+        <div class="container_contact" id="contact">
+          <div class="contact_item">
+            <div class="contact_heading">
+              <h1>Contact</h1>
+              <p>お問い合わせフォーム</p>
+            </div>
+            <div class="contact_all">
+              <h1>お問い合わせ</h1>
+              <div class="contact_tel">
+                <h2>電話でのお問い合わせ</h2>
+                <a href="tel:0123-456-789"><h3>0123-456-789</h3></a>
+                <p>平日/休日　10:00 ~ 19:00</p>
+              </div>
+              <div class="contact_email">
+                <h2>メールでのお問い合わせ</h2>
+                <div class="form_item">
+                  <form class="contact_form" action="index.html" method="post">
+                    <!--お名前-->
+                    <div class="form_one">
+                      <p class="form_left">お名前</p>
+                      <div class="form_right">
+                        <input type="text" name="name">
+                        <p>例）竹花　貴騎</p>
+                      </div>
+                    </div>
+                    <!--ふりがな-->
+                    <div class="form_one">
+                      <p class="form_left">ふりがな</p>
+                      <div class="form_right">
+                        <input type="text" name="name_simple">
+                        <p>例）たけはな　たかき</p>
+                      </div>
+                    </div>
+                    <!--メールアドレス-->
+                    <div class="form_one">
+                      <p class="form_left">メールアドレス</p>
+                      <div class="form_right">
+                        <input type="email" name="email">
+                        <p>例) contact@xxx.com</p>
+                      </div>
+                    </div>
+                    <!--電話番号-->
+                    <div class="form_one">
+                      <p class="form_left">電話番号</p>
+                      <div class="form_right">
+                        <input type="tel" name="tel">
+                        <p>例）0123-456-789</p>
+                      </div>
+                    </div>
+                    <!--お問い合わせ内容-->
+                    <div class="form_textarea">
+                      <p>お問い合わせ内容</p>
+                      <textarea name="message" rows="8" cols="80"></textarea>
+                    </div>
+                    <input class="submit" type="submit" name="submit" value="入力内容を送信する">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
