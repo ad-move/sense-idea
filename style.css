@@ -1,0 +1,432 @@
+* {
+  padding:0;
+  margin:0;
+}
+
+header {
+  height:600px;
+  background-image: url("image/office.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:white;
+  position: relative;
+}
+
+.container_header {
+  padding-top:30px;
+}
+
+.header-left {
+  font-size:30px;
+  float:left;
+  color:coral;
+  padding-left:30px;
+}
+
+.header-right {
+  font-size:30px;
+  text-align: center;
+}
+
+.header-right li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.header-right a {
+  color: white;
+  text-decoration: none;
+}
+
+.header-right li:hover {
+  border-bottom:2px solid coral;
+}
+
+.heading {
+  position:absolute;
+  top:200px;
+  left:10%;
+}
+
+.heading h1{
+  font-size:80px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.heading h3{
+  font-size:30px;
+  margin-bottom: 30px;
+}
+
+.heading a {
+  font-size:10px;
+  padding:20px 25px;
+  background-color: coral;
+  text-decoration: none;
+  color:white;
+  border-radius: 50px;
+}
+
+/*-----------会社概要-----------*/
+
+.container_company {
+  height:1000px;
+  width:100%;
+  margin-top:100px;
+}
+
+.company_item {
+  width:80%;
+  margin: 0 auto;
+}
+
+.company_heading h1{
+  font-size:50px;
+  font-family: 'Oswald', sans-serif;
+  border-left:5px solid coral;
+  padding-left:20px;
+}
+
+.company_heading p{
+  padding-left:30px;
+}
+
+.company_heart, .company_member {
+  text-align: center;
+  margin-top:100px;
+}
+
+.company_heart h2, .company_member h2{
+  text-align: center;
+  font-size:35px;
+}
+
+.company_heart h2::before,
+.company_heart h2::after,
+.company_member h2::before,
+.company_member h2::after
+ {
+  content:"-----";
+  color:coral;
+  padding: 0 30px;
+}
+
+.company_heart h3 {
+  font-size:30px;
+  margin:100px 0 30px 0;
+}
+
+.company_heart p {
+  font-size:20px;
+}
+
+.member_item {
+  display: flex;
+  margin-top:100px;
+}
+
+.member_item li {
+  width:33.3%;
+  list-style: none;
+  box-sizing: border-box;
+  padding-left:20px;
+}
+
+.member_item img {
+  width:100%;
+  /*border-radius: 50px;*/
+  box-sizing: border-box;
+}
+
+.member_item img:hover {
+  transform: scale(1.1, 1.1);
+  transition: 1s all;
+}
+
+
+/*-----------サービス-----------*/
+
+.container_service {
+  height:1000px;
+  width:100%;
+  margin-top:100px;
+  text-align: center;
+}
+
+.service_item {
+  width:80%;
+  margin: 0 auto;
+}
+
+.service_header {
+  height:150px;
+  text-align:left;
+  margin-bottom: 30px;
+}
+
+.service_header h1{
+  font-size:50px;
+  font-family: 'Oswald', sans-serif;
+  border-left:5px solid coral;
+  padding-left:20px;
+}
+
+.service_item p{
+  padding-left:30px;
+}
+
+.body_up {
+  width:100%;
+  height:50%;
+  margin: 0 auto;
+}
+
+.body_down {
+  width:100%;
+  height:50%;
+}
+
+.up_left {
+  float:left;
+  width:50%;
+  height:50%;
+  list-style: none;
+  box-sizing: border-box;
+  padding: 0 20px 20px 0;
+}
+
+.up_right {
+  float:right;
+  width:50%;
+  height:50%;
+  list-style: none;
+  box-sizing: border-box;
+  padding: 0 0 20px 20px;
+}
+
+.down_left {
+  float:left;
+  width:50%;
+  height:50%;
+  list-style: none;
+  box-sizing: border-box;
+  padding:20px 20px 0 0;
+}
+
+.down_right {
+  float:right;
+  width:50%;
+  height:50%;
+  list-style: none;
+  box-sizing: border-box;
+  padding:20px 0 0 20px;
+}
+
+.up_left img{
+  width:100%;
+  height:50%;
+}
+
+.up_right img{
+  width:100%;
+  height:50%;
+}
+
+.down_left img{
+  width:100%;
+  height:50%;
+}
+
+.down_right img{
+  width:100%;
+  height:50%;
+}
+
+.up_left img:hover,
+.up_right img:hover,
+.down_left img:hover,
+.down_right img:hover{
+  transform: scale(1.1, 1.1);
+  transition: 1s all;
+  filter: blur(3px);
+}
+
+.zoom {
+  overflow: hidden;
+}
+
+
+/*-----------制作実績-----------*/
+
+.container.work {
+  height:1000px;
+  width:100%;
+  margin-top:100px;
+}
+
+.work_item {
+  width:80%;
+  margin: 0 auto;
+}
+
+.work_item h1{
+  font-size:50px;
+  font-family: 'Oswald', sans-serif;
+  border-left:5px solid coral;
+  padding-left:20px;
+}
+
+.work_item p{
+  padding-left:30px;
+}
+
+/*-----------お問い合わせフォーム-----------*/
+
+.container.contact {
+  height:1000px;
+  width:100%;
+  margin-top:100px;
+}
+
+.contact_item {
+  width:80%;
+  margin: 0 auto;
+}
+
+.contact_heading h1{
+  font-size:50px;
+  font-family: 'Oswald', sans-serif;
+  border-left:5px solid coral;
+  padding-left:20px;
+}
+
+.contact_heading p{
+  padding-left:30px;
+}
+
+.contact_all {
+  text-align: center;
+  margin-top:50px;
+}
+
+.contact_all h1::before,
+.contact_all h1::after {
+  content:"-----";
+  color:coral;
+  padding: 0 30px;
+}
+
+/*----------電話でのお問い合わせ-----------*/
+
+.contact_tel {
+  margin-top:100px;
+}
+
+.contact_tel a {
+  text-decoration: none;
+}
+
+.contact_tel h3 {
+  font-size:40px;
+  color: coral;
+  margin-top:20px;
+}
+
+.contact_tel p {
+  font-size:20px;
+  margin-top:20px;
+}
+
+/*----------メールでのお問い合わせ-----------*/
+
+.contact_email {
+  margin-top:150px !important;
+  margin: 0 auto;
+}
+
+.contact_email form{
+  margin:0 auto;
+}
+
+.form_item {
+  margin:0 auto;
+  display: inline-block;
+  margin-top:100px;
+}
+
+.contact_form {
+  text-align: left;
+}
+
+.form_one {
+  margin-top:30px;
+}
+
+.form_one p {
+  font-size: 20px;
+}
+
+.form_left {
+  float:left;
+}
+
+.form_right {
+  text-align:right;
+  margin-right:130px;
+}
+
+.form_right p {
+  font-size:15px;
+  margin-top:5px;
+  padding:10px 5px;
+}
+
+.contact_form input {
+  font-size:20px;
+  padding:7px 15px;
+}
+
+/*-----------お問い合わせ内容----------*/
+
+.form_textarea {
+  margin-top:30px;
+}
+
+.form_textarea p {
+  font-size:20px;
+}
+
+.form_textarea textarea{
+  margin-top:20px;
+  padding:5px 0 0 5px;
+  font-size:15px;
+}
+
+.contact_form input,
+.contact_form textarea {
+  border: 1px solid black;
+  background-color:rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.submit {
+  display: block;
+  background-color: coral !important;
+  padding:10px 15px;
+  color: white;
+  border:none;
+  border-radius: 20px !important;
+  margin-top:25px;
+  border:1px solid coral !important;
+  font-size:15px !important;
+}
+
+/*----------フッター ----------*/
+
+footer {
+  height:300px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top:100px;
+}
