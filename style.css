@@ -28,11 +28,6 @@ header {
   mix-blend-mode: multiply;
 }
 
-/*.header-left img {
-  width:100px;
-  height:100px;
-}*/
-
 .header-right {
   font-size:30px;
   text-align: center;
