@@ -3,14 +3,18 @@
   margin:0;
 }
 
+*:focus {
+ outline: none;
+}
+
 header {
+  width: 100%;
   height:600px;
   background-image: url("office.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color:white;
-  position: relative;
 }
 
 .container_header {
@@ -20,9 +24,14 @@ header {
 .header-left {
   font-size:30px;
   float:left;
-  color:coral;
   padding-left:30px;
+  mix-blend-mode: multiply;
 }
+
+/*.header-left img {
+  width:100px;
+  height:100px;
+}*/
 
 .header-right {
   font-size:30px;
@@ -41,17 +50,19 @@ header {
 }
 
 .header-right li:hover {
-  border-bottom:2px solid coral;
+  border-bottom:3px solid coral;
 }
 
 .heading {
-  position:absolute;
-  top:200px;
-  left:10%;
+  position:relative;
+  top:130px;
+  left:60%;
+  /*top:200%;
+  left:10%;*/
 }
 
 .heading h1{
-  font-size:80px;
+  font-size:100px;
   font-family: 'Oswald', sans-serif;
 }
 
@@ -61,18 +72,26 @@ header {
 }
 
 .heading a {
-  font-size:10px;
+  font-size:13px;
   padding:20px 25px;
   background-color: coral;
   text-decoration: none;
   color:white;
   border-radius: 50px;
+  position:relative;
+  top:0;
+  left:14%;
+  /*left:0;*/
+}
+
+.heading a:hover {
+  top:-5px;
 }
 
 /*-----------会社概要-----------*/
 
 .container_company {
-  height:1000px;
+  height:100%;
   width:100%;
   margin-top:100px;
 }
@@ -91,6 +110,7 @@ header {
 
 .company_heading p{
   padding-left:30px;
+  font-family: "Noto Sans JP";
 }
 
 .company_heart, .company_member {
@@ -108,7 +128,7 @@ header {
 .company_member h2::before,
 .company_member h2::after
  {
-  content:"-----";
+  content:"---";
   color:coral;
   padding: 0 30px;
 }
@@ -120,6 +140,9 @@ header {
 
 .company_heart p {
   font-size:20px;
+  width:70%;
+  margin: 0 auto;
+  line-height: 50px;
 }
 
 .member_item {
@@ -136,7 +159,6 @@ header {
 
 .member_item img {
   width:100%;
-  /*border-radius: 50px;*/
   box-sizing: border-box;
 }
 
@@ -149,10 +171,14 @@ header {
 /*-----------サービス-----------*/
 
 .container_service {
-  height:1000px;
+  height:100%;
   width:100%;
   margin-top:100px;
   text-align: center;
+}
+
+.service_body {
+  height:900px;
 }
 
 .service_item {
@@ -171,6 +197,10 @@ header {
   font-family: 'Oswald', sans-serif;
   border-left:5px solid coral;
   padding-left:20px;
+}
+
+.service_header {
+  font-family: "Noto Sans JP";
 }
 
 .service_item p{
@@ -257,13 +287,45 @@ header {
   overflow: hidden;
 }
 
+.up_left p,
+.up_right p,
+.down_left p,
+.down_right p{
+  font-family: 'Oswald', sans-serif;
+  font-family: "Noto Sans JP";
+  font-size:20px;
+  margin-top:5px;
+}
+
+/*-----サービス・もっと見る------*/
+
+.service_viewall {
+  background-color: coral;
+  border: 1px solid coral;
+  padding: 20px 45px;
+  font-size:20px;
+  border-radius: 50px;
+  color: white;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+.service_viewall:hover {
+  background-color: white;
+  color: coral;
+}
+
 
 /*-----------制作実績-----------*/
 
-.container.work {
-  height:1000px;
+.container_work {
+  height:100%;
   width:100%;
   margin-top:100px;
+}
+
+.work_heading p{
+  font-family: "Noto Sans JP";
 }
 
 .work_item {
@@ -282,12 +344,86 @@ header {
   padding-left:30px;
 }
 
+/*-----breakfast動画-----*/
+
+.movie_breakfast {
+  height:500px;
+  text-align: left;
+}
+
+.movie_breakfast video {
+  width:400px;
+  height:500px;
+  margin:30px 0 0 100px;
+}
+
+.backgray_breakfast {
+  content:'';
+  background-color: rgba(0, 0, 0, 0.3);
+  width:450px;
+  height:420px;
+  opacity:0.5;
+  position: relative;
+  top:-400px;
+  left:130px;
+  z-index:-1;
+}
+
+/*-----カフェ動画-----*/
+
+.movie_cafe {
+  height:630px;
+  text-align: right;
+}
+
+.movie_cafe video {
+  width:400px;
+  height:500px;
+  position: relative;
+  margin:30px 0 0 100px;
+}
+
+.backgray_cafe {
+  content:'';
+  background-color: rgba(0, 0, 0, 0.3);
+  width:450px;
+  height:420px;
+  opacity:0.5;
+  position: relative;
+  top:-400px;
+  left:600px;
+  z-index:-1;
+}
+
+/*-----もっと見る-----*/
+
+.work_video {
+  text-align: center;
+}
+
+.work_viewall {
+  background-color: coral;
+  border: 1px solid coral;
+  padding: 20px 45px;
+  font-size:20px;
+  width:20%;
+  text-align: center;
+  border-radius: 50px;
+  color: white;
+  text-decoration: none;
+}
+
+.work_viewall:hover {
+  background-color: white;
+  color: coral;
+}
+
 /*-----------お問い合わせフォーム-----------*/
 
-.container.contact {
-  height:1000px;
+.container_contact {
   width:100%;
   margin-top:100px;
+  height:100%;
 }
 
 .contact_item {
@@ -304,6 +440,7 @@ header {
 
 .contact_heading p{
   padding-left:30px;
+  font-family: "Noto Sans JP";
 }
 
 .contact_all {
@@ -313,7 +450,7 @@ header {
 
 .contact_all h1::before,
 .contact_all h1::after {
-  content:"-----";
+  content:"---";
   color:coral;
   padding: 0 30px;
 }
@@ -326,6 +463,10 @@ header {
 
 .contact_tel a {
   text-decoration: none;
+}
+
+.contact_tel h2 {
+  font-size:30px;
 }
 
 .contact_tel h3 {
@@ -344,6 +485,10 @@ header {
 .contact_email {
   margin-top:150px !important;
   margin: 0 auto;
+}
+
+.contact_email h2 {
+  font-size:30px;
 }
 
 .contact_email form{
@@ -402,6 +547,7 @@ header {
   margin-top:20px;
   padding:5px 0 0 5px;
   font-size:15px;
+  width:80%;
 }
 
 .contact_form input,
@@ -414,13 +560,19 @@ header {
 .submit {
   display: block;
   background-color: coral !important;
-  padding:10px 15px;
+  padding:20px 25px !important;
   color: white;
   border:none;
-  border-radius: 20px !important;
+  border-radius: 50px !important;
   margin-top:25px;
   border:1px solid coral !important;
   font-size:15px !important;
+  position: relative;
+  top:0;
+}
+
+.submit:hover {
+  top:-5px;
 }
 
 /*----------フッター ----------*/
