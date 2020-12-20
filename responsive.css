@@ -32,12 +32,12 @@
   }
 
   .heading h3{
-    font-size:30px;
+    font-size:25px;
     margin-bottom: 30px;
   }
 
   .heading a {
-    font-size:13px;
+    font-size:10px;
     padding:20px 25px;
     background-color: coral;
     text-decoration: none;
@@ -51,11 +51,11 @@
   /*-----------会社概要-----------*/
 
   .company_heart h2{
-    font-size:30px;
+    font-size:25px;
   }
 
   .company_heart h3 {
-    font-size:25px;
+    font-size:20px;
     margin:70px 0 30px 0;
   }
 
@@ -66,7 +66,7 @@
   }
 
   .company_member h2 {
-    font-size:25px;
+    font-size:20px;
   }
 
   .member_item {
@@ -111,7 +111,7 @@
   /*-----------制作実績-----------*/
 
   .container_work {
-    height:1300px;
+    height:100%;
     width:100%;
     margin-top:100px;
   }
@@ -203,7 +203,7 @@
   /*-----------お問い合わせフォーム-----------*/
 
   .container_contact {
-    height:1700px;
+    height:100%;
   }
 
   .contact_item {
@@ -213,19 +213,27 @@
 
   .contact_all h1{
     margin-top:100px;
-    font-size: 24px;
+    font-size: 20px;
   }
 
   /*----------電話でのお問い合わせ-----------*/
 
   .contact_tel h2 {
-    font-size:25px;
+    font-size:20px;
+  }
+
+  .contact_tel h3 {
+    font-size:30px;
+  }
+
+  .contact_tel p {
+    font-size:15px;
   }
 
   /*----------メールでのお問い合わせ-----------*/
 
   .contact_email h2 {
-    font-size:25px;
+    font-size:20px;
   }
 
   .form_item {
