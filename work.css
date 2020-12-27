@@ -1,0 +1,160 @@
+* {
+  padding:0;
+  margin:0;
+}
+
+.wrap {
+  overflow:hidden;
+}
+
+*:focus {
+ outline: none;
+}
+
+body {
+  width:100%;
+}
+
+header {
+  width: 100%;
+  height:600px;
+  background-image: url("work_image/worktop_pic.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color:white;
+}
+
+.container_header {
+  padding-top:30px;
+}
+
+.header-left {
+  font-size:30px;
+  float:left;
+  padding-left:30px;
+  mix-blend-mode: multiply;
+}
+
+
+.header-right {
+  font-size:30px;
+  text-align: center;
+}
+
+.header-right li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.header-right a {
+  color: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+}
+
+.header-right li:hover {
+  border-bottom:3px solid coral;
+}
+
+.heading {
+  position:relative;
+  top:130px;
+  left:60%;
+  /*top:200%;
+  left:10%;*/
+}
+
+.heading h1{
+  font-size:100px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.heading h3{
+  font-size:30px;
+  margin-bottom: 30px;
+}
+
+.heading a {
+  font-size:13px;
+  padding:20px 25px;
+  background-color: coral;
+  text-decoration: none;
+  color:white;
+  border-radius: 50px;
+  position:relative;
+  top:0;
+  left:14%;
+  /*left:0;*/
+}
+
+.heading a:hover {
+  top:-5px;
+}
+
+/*----------制作実績-----------*/
+
+.container_work {
+  height:100%;
+  width:100%;
+  margin-top:100px;
+}
+
+.work_heading p{
+  font-family: "Noto Sans JP";
+}
+
+.work_item {
+  width:80%;
+  margin: 0 auto;
+}
+
+.work_item h1{
+  font-size:50px;
+  font-family: 'Oswald', sans-serif;
+  border-left:5px solid coral;
+  padding-left:20px;
+}
+
+.work_item p{
+  padding-left:30px;
+}
+
+/*-----５個の制作-----*/
+
+.work_five {
+  width:100%;
+  margin-top:100px;
+  text-align: center;
+  margin:  0 auto;
+}
+
+.work_five li {
+  list-style: none;
+  margin: 0 auto;
+}
+
+.work_five video {
+  width:25%;
+  display: flex;
+  margin-top:100px;
+  border-radius: 50px;
+}
+
+.work_first {
+  box-sizing: border-box;
+}
+
+.work_second {
+  position: relative;
+  top:-600px;
+  left:30%;
+  box-sizing: border-box;
+}
+
+.work_third {
+  position: relative;
+  top:-1100px;
+  left:60%;
+  box-sizing: border-box;
+}
