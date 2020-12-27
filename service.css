@@ -1,0 +1,128 @@
+* {
+  padding:0;
+  margin:0;
+}
+
+.wrap {
+  overflow:hidden;
+}
+
+*:focus {
+ outline: none;
+}
+
+body {
+  width:100%;
+}
+
+header {
+  width: 100%;
+  height:600px;
+  background-image: url("service_image/servicetop_pic.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.container_header {
+  padding-top:30px;
+}
+
+.header-left {
+  font-size:30px;
+  float:left;
+  padding-left:30px;
+  mix-blend-mode: multiply;
+}
+
+
+.header-right {
+  font-size:30px;
+  text-align: center;
+}
+
+.header-right li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.header-right a {
+  color: rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+}
+
+.header-right li:hover {
+  border-bottom:3px solid coral;
+}
+
+.heading {
+  position:relative;
+  top:130px;
+  left:60%;
+  /*top:200%;
+  left:10%;*/
+}
+
+.heading h1{
+  font-size:100px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.heading h3{
+  font-size:30px;
+  margin-bottom: 30px;
+}
+
+.heading a {
+  font-size:13px;
+  padding:20px 25px;
+  background-color: coral;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  border-radius: 50px;
+  position:relative;
+  top:0;
+  left:14%;
+  /*left:0;*/
+}
+
+.heading a:hover {
+  top:-5px;
+}
+
+/*----------サービス-----------*/
+
+.container_service {
+  width:80%;
+  height:100%;
+  margin: 0 auto;
+  margin-top:100px;
+}
+
+.service_header {
+  padding-bottom: 30px;
+}
+
+.service_header h1{
+  font-size:60px;
+  font-family: 'Oswald', sans-serif;
+  border-left:5px solid coral;
+  padding-left:20px;
+}
+
+.service_header p{
+  padding-left:30px;
+  font-family: "Noto Sans JP"
+}
+
+.explain {
+  padding-left: 30px;
+  font-size:20px;
+}
+
+.explain a{
+  color:coral;
+  text-decoration: none;
+}
