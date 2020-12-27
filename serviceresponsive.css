@@ -1,0 +1,84 @@
+/* Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199px) {
+  /*画面サイズが1199px以下だったらここを読み込む*/
+ }
+
+/* Medium devices (tablets, less than 992px)*/
+@media (max-width: 991px) { /*--col-md--*/
+  /*画面サイズが991px以下だったらここを読み込む*/
+ }
+
+/* Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767px) { /*--col-sm--*/
+  /*画面サイズが767px以下だったらここを読み込む*/
+ }
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) { /*--col-xs--*/
+  /*画面サイズが575px以下だったらここを読み込む*/
+
+  .heading {
+    text-align: center;
+    position:relative;
+    top:130px;
+    left:0px;
+    /*top:200%;
+    left:10%;*/
+  }
+
+  .heading h1{
+    font-size:60px;
+    font-family: 'Oswald', sans-serif;
+  }
+
+  .heading h3{
+    font-size:25px;
+    margin-bottom: 30px;
+  }
+
+  .heading a {
+    font-size:10px;
+    padding:20px 25px;
+    background-color: coral;
+    text-decoration: none;
+    color:white;
+    border-radius: 50px;
+    position:relative;
+    top:0;
+    left:0;
+  }
+
+  /*----------サービス-----------*/
+
+  .container_service {
+    width:80%;
+    height:100%;
+    margin: 0 auto;
+    margin-top:100px;
+  }
+
+  .service_header {
+    padding-bottom: 30px;
+  }
+
+  .service_header h1{
+    font-size:50px;
+    font-family: 'Oswald', sans-serif;
+    border-left:5px solid coral;
+    padding-left:20px;
+  }
+
+  .service_header p{
+    padding-left:30px;
+    font-family: "Noto Sans JP"
+  }
+
+  .explain {
+    padding-left: 0px;
+    font-size:15px;
+  }
+
+  .explain a{
+    color:coral;
+    text-decoration: none;
+  }
